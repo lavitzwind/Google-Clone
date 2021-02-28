@@ -17,8 +17,9 @@ header nav {
     display: flex;
     justify-content: flex-end;
 }
+
 header nav .nav-right-section {
-    width: 250px;
+    width: 200px;
     height: auto;
     display: flex;
     list-style: none;
@@ -26,8 +27,14 @@ header nav .nav-right-section {
     align-items: center;
 }
 
+header nav .nav-right-section .nav-right-section___underline:hover {
+    text-decoration: underline;
+}
+
+
+
 nav .nav-right-section a {
-    margin-right: 10px;
+    margin-right: 20px;
     color: #000000;
 
 }
@@ -39,6 +46,13 @@ nav .nav-right-section .menu-icon {
     background-size: contain;
     width: 25px;
     height: 25px;
+}
+
+nav .nav-right-section .menu-icon:hover {
+    border-radius: 50%;
+    cursor: pointer;
+ 
+
 }
 
 nav .nav-right-section img {
@@ -81,4 +95,93 @@ main .main-input input {
     height: 40px;
     border: none;
     outline: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 8px;
+}
+
+main .main-buttons button:hover {
+    border: 0.5px solid #c6c6c6;
+    box-shadow: 0 1px 1px grey;
+    color: #222;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+
+footer ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
